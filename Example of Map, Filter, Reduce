@@ -1,0 +1,6 @@
+from functools import *
+ls = [10, 2, 30, 4, 50, 6, 70, 8, 3]
+print('ORIGINAL LIST--:', ls)
+print(list(filter(lambda x: x % 2 == 0, ls)))
+print(list(map(lambda x: x*x, ls)))
+print(reduce(lambda x, y: x+y, ls))
